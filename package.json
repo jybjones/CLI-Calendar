@@ -1,0 +1,29 @@
+{
+  "name": "cli-calendar",
+  "version": "1.0.0",
+  "description": "Creating a CLI calendar",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --recursive test/unit",
+    "test-integration": "mocha --recursive test/integration",
+    "test-cov": "istanbul cover _mocha -- --recursive",
+    "codeclimate-coverage": "codeclimate-test-reporter < ./coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jybjones/CLI-Calendar.git"
+  },
+  "author": "Jennifer Jones <jybjones@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jybjones/CLI-Calendar/issues"
+  },
+  "homepage": "https://github.com/jybjones/CLI-Calendar#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "codeclimate-test-reporter": "^0.1.0",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
+    "mocha-lcov-reporter": "0.0.2"
+  }
+}
